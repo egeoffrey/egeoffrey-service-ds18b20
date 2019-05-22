@@ -1,0 +1,6 @@
+package: myhouse-service-ds18b20
+revision: 1
+version: development
+git: myhouse-project/myhouse-service-ds18b20
+modules:
+  - service/ds18b20
