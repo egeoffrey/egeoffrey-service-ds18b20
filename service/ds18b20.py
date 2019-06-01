@@ -1,7 +1,7 @@
 ### service/ds18b20: retrieve temperature from a ds18b20 sensor
 ## HOW IT WORKS: 
 ## DEPENDENCIES:
-# OS: 
+# OS: connect sensor to pin 4, enable one-wire interface through raspi-config, reboot, device id will be in /sys/bus/w1/devices
 # Python: 
 ## CONFIGURATION:
 # required: 

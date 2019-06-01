@@ -1,6 +1,21 @@
 package: myhouse-service-ds18b20
-revision: 1
+revision: 2
 version: development
 git: myhouse-project/myhouse-service-ds18b20
 modules:
   - service/ds18b20
+default_config:
+  - sensors/templates/ds18b20:
+      disabled: true
+      description: ds18b20
+      format: float_2
+      retain: history
+      calculate: avg_min_max
+      service:
+        configuration:
+          device: 28-051691d49bff
+        mode: active
+        name: ds18b20
+        schedule:
+          minutes: 10
+          trigger: interval
