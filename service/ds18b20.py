@@ -15,9 +15,9 @@
 
 import os
 
-from sdk.module.service import Service
+from sdk.python.module.service import Service
 
-import sdk.utils.exceptions as exception
+import sdk.python.utils.exceptions as exception
 
 class Ds18b20(Service):
     # What to do when initializing
