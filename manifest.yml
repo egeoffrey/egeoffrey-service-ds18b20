@@ -1,5 +1,6 @@
+manifest_schema: 1
 package: myhouse-service-ds18b20
-revision: 3
+revision: 4
 version: development
 github: myhouse-project/myhouse-service-ds18b20
 dockerhub: myhouseproject/myhouse-service-ds18b20
@@ -8,4 +9,12 @@ container_config:
 description: Retrieve temperature from a ds18b20 sensor
 tags: service ds18b20 temperature weather raspberrypi
 modules:
-  - service/ds18b20
+  - service/ds18b20:
+      description: Retrieve temperature from a ds18b20 sensor
+      service_configuration: 
+        active:
+          - name: device
+            description: The device identifier that can be found under /sys/bus/w1/devices
+            format: string
+            placeholder: 28-0000067b9508
+            required: true
