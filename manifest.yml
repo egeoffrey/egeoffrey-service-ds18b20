@@ -4,6 +4,7 @@ container_config:
 description: Retrieve temperature from a ds18b20 sensor
 dockerhub: myhouseproject/myhouse-service-ds18b20
 github: myhouse-project/myhouse-service-ds18b20
+icon: thermometer-three-quarters
 manifest_schema: 2
 modules:
 - service/ds18b20:
@@ -16,6 +17,6 @@ modules:
         placeholder: 28-0000067b9508
         required: true
 package: myhouse-service-ds18b20
-revision: 5
+revision: 6
 tags: service ds18b20 temperature weather raspberrypi
 version: 1.0
