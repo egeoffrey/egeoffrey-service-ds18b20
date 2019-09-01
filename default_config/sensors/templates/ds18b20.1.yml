@@ -6,7 +6,7 @@ calculate: avg_min_max
 service:
   configuration:
     device: 28-051691d49bff
-  mode: active
+  mode: pull
   name: ds18b20
   schedule:
     minutes: 10
