@@ -63,4 +63,4 @@ service ds18b20 temperature weather raspberrypi
 
 ## Version
 
-The version of this egeoffrey-service-ds18b20 is 1.0-10 on the development branch.
+The version of this egeoffrey-service-ds18b20 is 1.0-11 on the master branch.
